@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página oficial de Pacolio - Creador de contenido de videojuegos en Twitch, Discord e Instagram.">
+    <title>Pacolio - Página Oficial</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #8A2BE2, #FF69B4); /* Degradado de morado a rosa */
+            color: #fff;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://source.unsplash.com/1600x900/?gaming') no-repeat center center/cover;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            letter-spacing: 4px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            letter-spacing: 1.5px;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Buttons */
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-buttons a {
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+            letter-spacing: 2px;
+        }
+
+        .cta-buttons a:hover {
+            background: linear-gradient(135deg, #2bffbc, #2bff7a);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Biography Section */
+        .bio {
+            padding: 80px 20px;
+            background-color: rgba(36, 36, 36, 0.85); /* Fondo ligeramente transparente */
+            text-align: center;
+        }
+
+        .bio h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #ff4500;
+        }
+
+        .bio p {
+            font-size: 1.2rem;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+            color: #bbbbbb;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            width: 60px;
+            height: 60px;
+            border-radius: 15px;
+            background-color: #3a3a3a;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            color: white;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            background-color: #ff4500;
+        }
+
+        .social-links .twitch {
+            background-color: #6441a5;
+        }
+
+        .social-links .discord {
+            background-color: #7289da;
+        }
+
+        .social-links .instagram {
+            background: radial-gradient(circle at 30% 30%, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #141414;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pacolio</h1>
+    <p>Streamer | Gamer | Creador de Contenido</p>
+    <div class="cta-buttons">
+        <a href="https://www.twitch.tv/pacolio_" target="_blank">Twitch</a>
+        <a href="https://discord.gg/PAaaCsQPs7" target="_blank">Discord</a>
+    </div>
+</header>
+
+<section class="bio">
+    <h2>Sobre mí</h2>
+    <p>Bienvenidos a mi espacio oficial. Soy Pacolio, un apasionado streamer y gamer. En mi canal de Twitch, comparto mi experiencia en videojuegos y me encanta interactuar con la comunidad. Además, en Discord, puedes unirte a mi servidor para estar al tanto de todas mis actividades y conectarte con otros fans. ¡Únete a mí en esta aventura y sé parte de la comunidad!</p>
+    
+    <div class="social-links">
+        <a href="https://www.twitch.tv/pacolio_" class="twitch" target="_blank">T</a>
+        <a href="https://discord.gg/PAaaCsQPs7" class="discord" target="_blank">D</a>
+        <a href="https://www.instagram.com/pacolio_/" class="instagram" target="_blank">I</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Pacolio. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
